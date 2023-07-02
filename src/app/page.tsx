@@ -1,12 +1,10 @@
-import Login from '@/pages/Login'
-import Image from 'next/image'
-import Home from '@/pages/Main/index';
-import SideBar from '@/components/SideBar';
+import Login from "./Login/page";
 
-export default function App() {
-  return (
-    <main>
-      <Home/>
-    </main>
-  )
+const Main = () => {
+
+    return <>
+        <Login />
+    </>
 }
+
+export default Main;

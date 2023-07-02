@@ -1,12 +1,10 @@
 'use client'
 
-import Home from "@/pages/Main";
-import Patients from "@/pages/Patients";
-import Times from "@/pages/Times";
 import { CalendarDays, HomeIcon, Power, Users } from "lucide-react";
 import Link from "next/link";
-import { Perfil } from "../Perfil";
-
+import Image from "next/image";
+import Photo from '@/common/images/psicologaPhoto.png'
+import ActiveLink from '@/components/ActiveLinkProps';
 
 const SideBar = () => {
 
@@ -14,13 +12,20 @@ const SideBar = () => {
         <>
             <div className="h-screen flex flex-col">
                 <div className="flex flex-1">
-                    <aside className="w-72 bg-secondary-color border-r-2 p-12">
+                    <aside className="w-72 bg-secondary-color py-12">
                         <nav className="space-y-8 text-lg">
-                            <Perfil />
-                            <Link href={'/'} className="flex items-center gap-7 font-semibold"><HomeIcon size={'30px'} /><span className="text-gray-200">Home</span></Link>
-                            <Link href={'/horarios'} className="flex items-center gap-7 font-semibold"><CalendarDays size={'30px'} />Horário</Link>
-                            <Link href={'/pacientes'} className="flex items-center gap-7 font-semibold"><Users size={'30px'} />Pacientes</Link>
-                            <Link href={'/login'} className="items-center gap-7 font-semibold absolute bottom-5 flex"><Power />Desconectar</Link>
+                            <div className="container flex flex-col items-center">
+                                <Image src={Photo} height={80} width={80} alt="Imagem de Perfil" className="border-2 rounded-full border-sky-700"/>
+                                <span className="text-t-main font-semibold pt-3">User Name</span>
+                            </div>
+                            <div className="flex flex-col space-y-2">
+                                <ActiveLink href={'/'} ><HomeIcon />Home</ActiveLink>
+                                <ActiveLink href={'/Patients'} ><Users />Pacientes</ActiveLink>
+                                <ActiveLink href={'/Times'} ><CalendarDays />Calendario</ActiveLink>
+                                <div className="flex flex-col absolute bottom-2">
+                                    <ActiveLink href={'/Login'}><Power />Desconectar</ActiveLink>
+                                </div>
+                            </div>
                         </nav>
                     </aside>
                 </div>
