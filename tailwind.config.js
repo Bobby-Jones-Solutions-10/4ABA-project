@@ -19,6 +19,9 @@ module.exports = {
         't-main': '#111827',
         'success': '#49A078'
       },
+      boxShadow: {
+        'activeLink': '0 10px 60px -15px rgba(0, 0, 0, 0.3)',
+      }
     },
     variants: {},
     plugins: [],
