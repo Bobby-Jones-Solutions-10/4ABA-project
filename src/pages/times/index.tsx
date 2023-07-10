@@ -1,5 +1,7 @@
 import ContainerWeekDay from '@/components/ContainerWeekDay';
 import SideBar from '@/components/SideBar';
+import '../../app/globals.css'
+
 
 export default function App() {
 
