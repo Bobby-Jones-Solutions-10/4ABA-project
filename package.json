@@ -9,6 +9,7 @@
     "start": "next start",
     "lint": "next lint"
   },
+  
   "dependencies": {
     "@sentry/nextjs": "^7.57.0",
     "@svgr/webpack": "^8.0.1",
