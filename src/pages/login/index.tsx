@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Lock, User } from 'lucide-react'
 import FloatiInput from '@/components/FloatiInput/index';
-
+import '../../app/globals.css'
 
 function Login() {
     const [isLoading, setLoading] = useState(false)

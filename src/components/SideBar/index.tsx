@@ -1,5 +1,3 @@
-'use client'
-
 import { CalendarDays, HomeIcon, Power, Users } from "lucide-react";
 import Image from "next/image";
 import ActiveLink from '@/components/ActiveLinkProps';
