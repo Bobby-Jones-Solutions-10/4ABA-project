@@ -19,7 +19,7 @@ const SideBar = () => {
                                 <ActiveLink href={'/patients'} ><Users />Pacientes</ActiveLink>
                                 <ActiveLink href={'/times'} ><CalendarDays />Calendario</ActiveLink>
                                 <div className="flex flex-col absolute bottom-2">
-                                    <ActiveLink href={'/login'}><Power />Desconectar</ActiveLink>
+                                    <ActiveLink href={'/'}><Power />Desconectar</ActiveLink>
                                 </div>
                             </div>
                         </nav>

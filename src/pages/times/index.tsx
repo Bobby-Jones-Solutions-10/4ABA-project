@@ -1,23 +1,20 @@
-import ContainerWeekDay from '@/components/ContainerWeekDay';
+import CardWeekDay from '@/components/CardWeekDay';
 import SideBar from '@/components/SideBar';
-import '../../app/globals.css'
+import '@/app/globals.css'
 
 
 export default function App() {
 
-  const appointments1 = <div className='container flex flex-col bg-sky-200'>Consulta</div>
-  const appointments2 = <div className='container flex flex-col bg-sky-200'>Dentista</div>
-  const appointments3 = <div className='container flex flex-col bg-sky-200'>Academia</div>
   return (
     <div className='flex'>
       <SideBar />
-      <ContainerWeekDay tittle={'Segunda'} tasks={[appointments1, appointments2, appointments3]} />
-      <ContainerWeekDay tittle={'Terça'} tasks={[appointments1, appointments2, appointments3]} />
-      <ContainerWeekDay tittle={'Quarta'} tasks={[appointments1, appointments2, appointments3]} />
-      <ContainerWeekDay tittle={'Quinta'} tasks={[appointments1, appointments2, appointments3]} />
-      <ContainerWeekDay tittle={'Sexta'} tasks={[appointments1, appointments2, appointments3]} />
-      <ContainerWeekDay tittle={'Sábado'} tasks={[appointments1, appointments2, appointments3]} />
-      <ContainerWeekDay tittle={'Domingo'} tasks={[appointments1, appointments2, appointments3]} />
+      <CardWeekDay tittle={'Segunda'} tasks={[]} />
+      <CardWeekDay tittle={'Terça'} tasks={[]} />
+      <CardWeekDay tittle={'Quarta'} tasks={[]} />
+      <CardWeekDay tittle={'Quinta'} tasks={[]} />
+      <CardWeekDay tittle={'Sexta'} tasks={[]} />
+      <CardWeekDay tittle={'Sábado'} tasks={[]} />
+      <CardWeekDay tittle={'Domingo'} tasks={[]} />
     </div>
   )
 }

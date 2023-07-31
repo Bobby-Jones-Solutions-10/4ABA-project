@@ -1,11 +1,6 @@
 
-type containerWeekDayProps = {
-    tittle: string,
-    tasks: React.ReactNode,
 
-}
-
-const ContainerWeekDay = ({tittle, tasks}: containerWeekDayProps) => {
+const CardWeekDay = ({ tittle, tasks }: CardTasks) => {
 
     return (
         <>
@@ -21,4 +16,4 @@ const ContainerWeekDay = ({tittle, tasks}: containerWeekDayProps) => {
     )
 }
 
-export default ContainerWeekDay;
+export default CardWeekDay;
