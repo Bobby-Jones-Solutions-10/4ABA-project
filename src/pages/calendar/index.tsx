@@ -3,7 +3,7 @@ import SideBar from '@/components/SideBar';
 import '@/app/globals.css'
 
 
-export default function App() {
+const Calendar = () => {
 
   return (
     <div className='flex'>
@@ -18,3 +18,5 @@ export default function App() {
     </div>
   )
 }
+
+export default Calendar;

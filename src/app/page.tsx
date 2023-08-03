@@ -37,7 +37,7 @@ const Main = () => {
                         <Lock strokeWidth={2} width={30} height={30} />
                         <FloatInput placeHolder={'Senha'} id={'password'} name={'password'} typeInput={'password'} />
                     </div>
-                    <Link href={'/home'} className="mt-8 w-8/12 py-2 rounded-xl bg-success hover:bg-green-600 text-white font-semibold text-center block focus:outline-none focus:ring focus:ring-offset-2 focus:bg-green focus:ring-opacity-80 cursor-pointer">Logar</Link>
+                    <Link href={'/home'} prefetch={false} className="mt-8 w-8/12 py-2 rounded-xl bg-success hover:bg-green-600 text-white font-semibold text-center block focus:outline-none focus:ring focus:ring-offset-2 focus:bg-green focus:ring-opacity-80 cursor-pointer">Logar</Link>
                 </form>
             </div>
         </div>

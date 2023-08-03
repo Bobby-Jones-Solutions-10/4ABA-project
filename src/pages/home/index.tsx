@@ -1,5 +1,6 @@
+'use client'
 import SideBar from "@/components/SideBar"
-import '../../app/globals.css'
+import '@/app/globals.css'
 
 
 const Home = () => {

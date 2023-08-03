@@ -1,9 +1,7 @@
-import Link, { LinkProps } from 'next/link';
+import ActiveLinkProps from '@/types/ActiveLinkProps';
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-type ActiveLinkProps = {
-    children: React.ReactNode;
-} & LinkProps;
 
 const ActiveLink = ({ href, children, ...rest }: ActiveLinkProps) => {
 
