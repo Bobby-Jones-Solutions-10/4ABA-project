@@ -8,13 +8,12 @@ const nextConfig = {
     async redirects() {
         return [
             {
-                source: '/page', // pagina que sera digitada no navegador
-                destination: '/', // pagina que sera redirecioda
+                source: '/casa', // pagina que sera digitada no navegador
+                destination: '/home', // pagina que sera redirecioda
                 permanent: true,
             },
         ]
     }
-
 }
 
 module.exports = nextConfig

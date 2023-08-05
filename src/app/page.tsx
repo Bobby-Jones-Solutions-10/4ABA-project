@@ -5,18 +5,19 @@ import { Lock, User } from 'lucide-react'
 import FloatInput from '@/components/FloatInput';
 import '@/app/globals.css'
 import { useState } from 'react'
-import Login from '@/pages/api/auth/teste/signIn';
+import { GetServerSideProps } from 'next';
+import { PrismaClient } from '@prisma/client';
+
+
+// export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
+
+// }
 
 function Main() {
 
     const [isLoading, setLoading] = useState(false)
     const [login, setLogin] = useState('');
     const [password, setPassword] = useState('');
-
-
-    const handleSignIn = () => { 
-        Login()
-    }
 
     return (
         <>
@@ -32,7 +33,7 @@ function Main() {
                             <Lock strokeWidth={2} width={30} height={30} />
                             <FloatInput placeHolder={'Senha'} id={'password'} name={'password'} typeInput={'password'} />
                         </div>
-                        <button onClick={handleSignIn}>
+                        <button>
                             Logar
                         </button>
                     </form>
@@ -40,7 +41,6 @@ function Main() {
             </div>
         </>
     )
-
 }
 
 export default Main;
