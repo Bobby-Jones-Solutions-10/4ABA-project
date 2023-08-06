@@ -3,8 +3,8 @@
  */
 const nextConfig = {
 
-    trailingSlash: true,
-    
+    trailingSlash: true, //insere uma barra no final de todo link 
+
     async redirects() {
         return [
             {

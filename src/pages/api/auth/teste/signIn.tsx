@@ -3,14 +3,14 @@ import { PrismaClient } from '@prisma/client';
 const prisma = new PrismaClient();
 
 
-export class signin{
-  async execute({email = ""}){
-      const a = prisma.user.findUnique({
-        where:{
-          email
-        }
-      })
-  }
+export class signin {
+    async execute({ email = "" }) {
+        const a = prisma.user.findUnique({
+            where: {
+                email
+            }
+        })
+    }
 }
 
 
