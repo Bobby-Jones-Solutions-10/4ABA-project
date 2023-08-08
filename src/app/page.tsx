@@ -5,9 +5,6 @@ import { Lock, User } from 'lucide-react'
 import FloatInput from '@/components/FloatInput';
 import '@/app/globals.css'
 import { useState } from 'react'
-import { GetServerSideProps } from 'next';
-import { PrismaClient } from '@prisma/client';
-
 
 // export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
 

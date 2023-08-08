@@ -4,16 +4,10 @@ import dados from '../../../../dados.json'
 
 
 export async function getStaticPaths() {
-    // const paths = [
-    //   { params: { id: '1' } },
-    //   { params: { id: '2' } },
-    //   { params: { id: '3' } }
-    // ]
+
     const paths = dados.services.map((postAtual) => {
         return { params: { name: `${postAtual.title}` } };
     })
-    console.log('dados:', dados);
-    console.log('paths:', paths);
 
     return {
         paths: paths,
@@ -22,9 +16,8 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(context) {
-    console.log('Contexto', context.params.name);
-    const name = context.params.name;
 
+    const name = context.params.name;
     const post = dados.services.find((currentPost) => {
         if (currentPost.title === name) {
             return true;
@@ -32,7 +25,6 @@ export async function getStaticProps(context) {
         return false;
     })
 
-    console.log(post);
 
     return {
         props: {
@@ -70,7 +62,6 @@ const ServicesByName = (props) => {
             </div>
         </>
     )
-
 }
 
 export default ServicesByName;
