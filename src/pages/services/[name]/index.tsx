@@ -12,8 +12,6 @@ export async function getStaticPaths() {
     const paths = dados.services.map((postAtual) => {
         return { params: { name: `${postAtual.title}` } };
     })
-    console.log('dados:', dados);
-    console.log('paths:', paths);
 
     return {
         paths: paths,
@@ -22,7 +20,6 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(context) {
-    console.log('Contexto', context.params.name);
     const name = context.params.name;
 
     const post = dados.services.find((currentPost) => {
@@ -31,8 +28,6 @@ export async function getStaticProps(context) {
         }
         return false;
     })
-
-    console.log(post);
 
     return {
         props: {

@@ -14,10 +14,10 @@ const Services = () => {
 
     return (
         <>
-            <div className='flex'>
+            <div className='flex flex-row w-screen h-full'>
                 <SideBar />
-                
-                <div className='flex flex-wrap w-10/12 items-center justify-start m-12 h-full'>
+
+                <div className='flex flex-wrap w-9/12 items-center justify-start gap-4 mt-12 ml-12 h-full'>
                     <Suspense fallback={<IfLoading />}>
                         {
                             services.map(({ id, title, content, date, local }) => (
@@ -26,6 +26,7 @@ const Services = () => {
                         }
                     </Suspense>
                 </div>
+
             </div>
         </>
     );
