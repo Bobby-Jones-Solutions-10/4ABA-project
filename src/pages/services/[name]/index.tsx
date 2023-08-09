@@ -1,9 +1,10 @@
 
 import { useRouter } from 'next/router'
 import dados from '../../../../dados.json'
+import { GetStaticPaths, GetStaticProps } from 'next';
 
 
-export async function getStaticPaths() {
+export const getStaticPaths: GetStaticPaths = async () => {
 
     const paths = dados.services.map((postAtual) => {
         return { params: { name: `${postAtual.title}` } };
@@ -15,7 +16,7 @@ export async function getStaticPaths() {
     };
 }
 
-export async function getStaticProps(context) {
+export const getStaticProps: GetStaticProps = async (context) => {
 
     const name = context.params.name;
     const post = dados.services.find((currentPost) => {
@@ -24,7 +25,6 @@ export async function getStaticProps(context) {
         }
         return false;
     })
-
 
     return {
         props: {
