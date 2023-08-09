@@ -27,11 +27,11 @@ function Main() {
                     <form className="w-8/12 items-center flex-col flex">
                         <div className="mt-4 relative w-full flex space-x-2 items-center">
                             <User strokeWidth={2} width={30} height={30} />
-                            <FloatInput placeHolder={'Email'} id={'Email'} name={'email'} typeInput={'email'} />
+                            <FloatInput placeholder={'Email'} id={'Email'} name={'email'} type={'email'} />
                         </div>
                         <div className="mt-10 relative w-full flex space-x-2 items-center">
                             <Lock strokeWidth={2} width={30} height={30} />
-                            <FloatInput placeHolder={'Senha'} id={'password'} name={'password'} typeInput={'password'} />
+                            <FloatInput placeholder={'Senha'} id={'password'} name={'password'} type={'password'} />
                         </div>
                         <button>
                             Logar
