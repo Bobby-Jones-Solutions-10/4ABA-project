@@ -4,18 +4,15 @@ import dados from '../../../../dados.json'
 import { useState } from 'react';
 import '../../../app/globals.css'
 import FloatInput from '@/components/FloatInput';
+import { GetStaticProps } from 'next';
 
 
 export async function getStaticPaths() {
-    // const paths = [
-    //   { params: { id: '1' } },
-    //   { params: { id: '2' } },
-    //   { params: { id: '3' } }
-    // ]
+
     const paths = dados.services.map((postAtual) => {
         return { params: { name: `${postAtual.title}` } };
     })
-    
+
     return {
         paths: paths,
         fallback: false // false or 'blocking'
@@ -62,25 +59,17 @@ const ServicesByName = (props) => {
 
     return (
         <>
-            {
-                router.query.name === 'services/create' &&
-                <div>criar</div>
-            }
+            <div className='h-screen w-screen flex flex-row items-center justify-center'>
+                <div className='flex flex-row gap-2 rounded-lg bg-secondary-color justify-center p-16 w-10/12'>
+                    <FloatInput type='number' name='id' id={'id'} placeholder='ID' onChange={(e) => setId(e.target.value)} value={id} readOnly />
 
-            {
-                router.query.name != 'services/create' &&
-                <div className='h-screen w-screen flex flex-row items-center justify-center'>
-                    {nomePaciente}
-                    <div className='flex flex-row gap-2 rounded-lg bg-secondary-color justify-center p-16 w-10/12'>
-                        <FloatInput type='number' name='id' id={'id'} placeholder='ID' onChange={(e) => setId(e.target.value)} value={id} readOnly />
+                    <FloatInput type='text' name='local' id={'local'} placeholder='Local' onChange={(e) => setLocal(e.target.value)} value={local} />
 
-                        <FloatInput type='text' name='local' id={'local'} placeholder='Local' onChange={(e) => setLocal(e.target.value)} value={local} />
+                    <FloatInput type='nomePaciente' name='nomePaciente' id={'nomePaciente'} placeholder='Nome do Paciente' onChange={(e) => setNomePaciente(e.target.value)} value={nomePaciente} />
 
-                        <FloatInput type='nomePaciente' name='nomePaciente' id={'nomePaciente'} placeholder='Nome do Paciente' onChange={(e) => setNomePaciente(e.target.value)} value={nomePaciente} />
-
-                        <FloatInput type='text' name='content' id={'content'} placeholder='Conteudo' onChange={(e) => setContent(e.target.value)} value={content} />
-                    </div>
-                </div>}
+                    <FloatInput type='text' name='content' id={'content'} placeholder='Conteudo' onChange={(e) => setContent(e.target.value)} value={content} />
+                </div>
+            </div>
         </>
     )
 }
