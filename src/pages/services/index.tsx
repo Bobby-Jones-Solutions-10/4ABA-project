@@ -35,10 +35,7 @@ const Services = () => {
                             }
                         </Suspense>
                     </div>
-
-
                 </div>
-
             </div>
         </>
     );
