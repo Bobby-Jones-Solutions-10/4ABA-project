@@ -21,7 +21,7 @@ module.exports = {
       },
       boxShadow: {
         'activeLink': '0 10px 60px -15px rgba(0, 0, 0, 0.3)',
-      }
+      },
     },
     variants: {},
     plugins: [],
