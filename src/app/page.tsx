@@ -20,7 +20,7 @@ function Main() {
 
     return (
         <>
-            <div className="flex h-screen justify-center items-center" style={{ background: `url("/images/bgLogin.png") no-repeat`, backgroundSize: 'cover' }}>
+            <div className="flex h-screen justify-center items-center bg-[url('/images/bgLogin.png')] bg-cover bg-no-repeat">
                 <div className='flex flex-col items-center bg-background-color w-4/12 justify-center rounded-xl py-6 space-y-8 shadow-lg shadow-zinc-800 border-3'>
                     <Image src='/images/logo.png' alt='Logo' width={150} height={100} />
                     <form onSubmit={login} className="w-full gap-8 flex-col flex">
