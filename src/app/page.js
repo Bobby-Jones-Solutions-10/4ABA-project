@@ -12,7 +12,7 @@ function Main() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    function login(e: any) {
+    function login(e) {
         e.preventDefault()
         setLoading(true)
 
