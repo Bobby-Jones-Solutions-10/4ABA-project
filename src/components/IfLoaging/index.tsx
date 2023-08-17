@@ -1,4 +1,4 @@
-import LoadingIcon from "@/icons/LoadingIcon";
+import LoadingIcon from "@/app/icons/LoadingIcon";
 
 const IfLoading = () => {
     return (

@@ -4,7 +4,6 @@ import dados from '../../../../dados.json'
 import { useState } from 'react';
 import '../../../app/globals.css'
 import FloatInput from '@/components/FloatInput';
-import { GetStaticProps } from 'next';
 
 
 export async function getStaticPaths() {
@@ -19,7 +18,7 @@ export async function getStaticPaths() {
     };
 }
 
-export const getStaticProps: GetStaticProps = async (context) => {
+export const getStaticProps = async (context) => {
 
     const name = context.params.name;
     const post = dados.services.find((currentPost) => {
