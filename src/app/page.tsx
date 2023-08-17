@@ -48,20 +48,5 @@ function Main({ posts }) {
     )
 }
 
-// export async function getServerSideProps() {
-//     // will always run on the server
-//     // newest first
-//     const posts = await prisma.post.findMany({
-//         orderBy: {
-//             createdAt: "desc",
-//         },
-//     })
-
-//     return {
-//         props: {
-//             posts: JSON.parse(JSON.stringify(posts)),
-//         },
-//     }
-// }
 
 export default Main;
