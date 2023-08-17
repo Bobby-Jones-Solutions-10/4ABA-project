@@ -65,8 +65,10 @@ const ServicesByName = (props) => {
 
             {
                 router.query.name != 'services/create' &&
-                <div className='h-screen w-screen flex flex-row items-center justify-center'>
-                    {nomePaciente}
+                <div className='h-screen w-screen flex flex-col gap-10 items-center justify-center'>
+                    <div className="text-3xl font-bold text-800">
+                        Editar Consulta
+                    </div>
                     <div className='flex flex-row gap-2 rounded-lg bg-secondary-color justify-center p-16 w-10/12'>
                         <FloatInput type='number' name='id' id={'id'} placeholder='ID' onChange={(e) => setId(e.target.value)} value={id} readOnly />
 
