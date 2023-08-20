@@ -30,15 +30,12 @@ const Services = () => {
                         <Suspense fallback={<IfLoading />}>
                             {
                                 services.map(({ id, title, content, date, local }) => (
-                                    <ServicesPosts id={id} content={content} date={date} title={title} local={local} />
+                                    <ServicesPosts key={id} content={content} date={date} title={title} local={local} />
                                 ))
                             }
                         </Suspense>
                     </div>
-
-
                 </div>
-
             </div>
         </>
     );
