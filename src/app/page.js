@@ -70,7 +70,7 @@ function Main() {
     return (
         <>
             <div className="flex h-screen justify-center items-center bg-[url('/images/bgLogin.png')] bg-cover bg-no-repeat">
-                <div className='flex flex-col items-center bg-background-color w    -4/12 justify-center rounded-xl py-6 space-y-8 shadow-lg shadow-zinc-800 border-3'>
+                <div className='flex flex-col items-center bg-background-color w-4/12 justify-center rounded-xl py-6 space-y-8 shadow-lg shadow-zinc-800 border-3'>
                     <Image src='/images/logo.png' alt='Logo' width={150} height={100} />
                     <form onSubmit={handleSubmit(SignInUser)} className="w-full gap-8 flex-col flex">
                         <div className='flex w-full flex-col px-14 justify-center items-center gap-8'>
@@ -102,7 +102,7 @@ function Main() {
                                 <Link href='/register' className='text-green-700 font-semibold hover:underline'>Cadastre-se</Link>
                             </div>
                             <div className="justify-end flex w-6/12">
-                                <Link href='#' className='text-green-700 font-semibold hover:underline'>Esqueci a senha</Link>
+                                <Link href='/rpassword' className='text-green-700 font-semibold hover:underline'>Esqueci a senha</Link>
                             </div>
                         </div>
                     </form>
