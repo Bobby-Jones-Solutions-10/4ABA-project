@@ -34,10 +34,11 @@ const Register = () => {
 
     //hooks para os inputs
     const [name, setName] = useState('')
+    const [age, setAge] = useState('')
+    const [cpf, setCpf] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [comfirmPassword, setConfirmPassword] = useState('')
-    const [age, setAge] = useState('')
 
 
 
@@ -53,27 +54,34 @@ const Register = () => {
 
     return (
         <div className="flex h-screen justify-center items-center bg-zinc-500">
-            <div className='flex flex-wrap items-center bg-background-color w-6/12 justify-center rounded-xl py-6 space-y-8 shadow-lg shadow-zinc-800 border-3'>
+            <div className='flex flex-wrap items-center bg-background-color w-4/12 justify-center rounded-xl py-6 space-y-8 shadow-lg shadow-zinc-800 border-3'>
                 <h1>Cadastro</h1>
                 <form onSubmit={handleSubmit(createUser)} className='w-full gap-8 flex-col flex'>
-                    <div className='flex w-ful flex-wrap px-14 justify-center items-center gap-8'>
-                        <div className='flex relative w-10/12 space-x-2 items-center justify-center'>
+                    <div className='flex justify-start items-center font-bold text-xl ml-14 mb-6'>
+                        <h3>Paciente:</h3>
+                    </div>
+                    <div className='flex w-ful flex-wrap px-14 justify-start items-center gap-8'>
+                        <div className='flex relative w-8/12 items-center justify-center'>
                             <input onChange={(e) => setName(e.target.value)} type="text" id='name' className={styleInput} />
                             <label htmlFor="name" className={styleLabel}>Nome</label>
                         </div>
-                        <div className='flex relative w-24 space-x-2 items-center justify-center'>
+                        <div className='flex relative w-3/12 items-center justify-center'>
                             <input onChange={(e) => setAge(e.target.value)} type="text" id='age' className={styleInput} />
                             <label htmlFor="age" className={styleLabel}>Idade</label>
                         </div>
-                        <div className='flex relative w-full space-x-2 items-center justify-center'>
+                        <div className='flex relative w-4/12 items-center justify-center'>
+                            <input onChange={(e) => setCpf(e.target.value)} type="text" id='cpf' className={styleInput} />
+                            <label htmlFor="cpf" className={styleLabel}>CPF</label>
+                        </div>
+                        <div className='flex relative w-7/12 items-center justify-center'>
                             <input onChange={(e) => setEmail(e.target.value)} type="text" id='email' className={styleInput} />
                             <label htmlFor="email" className={styleLabel}>Email</label>
                         </div>
-                        <div className='flex relative w-full space-x-2 items-center justify-center'>
+                        <div className='flex relative w-full items-center justify-center'>
                             <input onChange={(e) => setPassword(e.target.value)} type="password" id='password' className={styleInput} />
                             <label htmlFor="password" className={styleLabel}>Senha</label>
                         </div>
-                        <div className='flex relative w-full space-x-2 items-center justify-center'>
+                        <div className='flex relative w-full items-center justify-center'>
                             <input onChange={(e) => setConfirmPassword(e.target.value)} type="password" id='confirmPassword' className={styleInput} />
                             <label htmlFor="confirmPassword" className={styleLabel}>Confirmar Senha</label>
                         </div>
