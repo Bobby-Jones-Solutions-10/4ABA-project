@@ -78,8 +78,7 @@ function Main() {
                                 <div className='flex relative w-full space-x-2 items-center justify-center'>
                                     <User strokeWidth={2} width={30} height={30} />
                                     <input {...register('email')} onChange={e => setEmail(e.target.value)} value={email} id={'email'} className={styleInput} type='text' />
-                                    <label htmlFor='email' className={styleLabel}>Email
-                                    </label>
+                                    <label htmlFor='email' className={styleLabel}>Email</label>
                                 </div>
                                 {errors.email && <span>{errors.email.message}</span>}
                             </div>
