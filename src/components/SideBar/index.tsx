@@ -17,7 +17,7 @@ const SideBar = () => {
                             <ActiveLink href={'/home'} ><HomeIcon />Home</ActiveLink>
                             <ActiveLink href={'/patients'} ><Users />Pacientes</ActiveLink>
                             <ActiveLink href={'/calendar'} ><CalendarDays />Calendario</ActiveLink>
-                            <ActiveLink href={'/services'} ><GanttChartSquareIcon />Consultas</ActiveLink>
+                            <ActiveLink href={'/consults'} ><GanttChartSquareIcon />Consultas</ActiveLink>
                             <div className="flex flex-col absolute bottom-2">
                                 <ActiveLink href={'/'}><Power />Desconectar</ActiveLink>
                             </div>

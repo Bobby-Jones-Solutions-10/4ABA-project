@@ -1,5 +1,5 @@
 
-const Create = () => {
+const createConsult = () => {
 
     return (
         <>
@@ -11,4 +11,4 @@ const Create = () => {
 
 }
 
-export default Create
+export default createConsult;
