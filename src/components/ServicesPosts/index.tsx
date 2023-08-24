@@ -6,7 +6,7 @@ export default function ServicesPosts({ title, content, id, date, local }: Servi
         <>
             <div key={id} className='flex flex-col gap-4 border-2 w-3/12 p-2 m-2 shadow-lg items-start justify-start'>
                 <div className='flex '>
-                    <Link href={`services/${title}`}>
+                    <Link href={`consults/${title}`}>
                         {title}
                     </Link>
                 </div>

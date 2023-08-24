@@ -39,7 +39,7 @@ export const getStaticProps = async (context) => {
     }
 }
 
-const ServicesByName = (props) => {
+const ConsultsByName = (props) => {
     const router = useRouter()
 
     const services = {
@@ -73,4 +73,4 @@ const ServicesByName = (props) => {
     )
 }
 
-export default ServicesByName;
+export default ConsultsByName;
