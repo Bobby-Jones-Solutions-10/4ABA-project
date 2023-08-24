@@ -1,5 +1,5 @@
 
-const CreateService = () => {
+const Create = () => {
 
     return (
         <>
@@ -11,4 +11,4 @@ const CreateService = () => {
 
 }
 
-export default CreateService
+export default Create

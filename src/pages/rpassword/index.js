@@ -47,12 +47,12 @@ const Rpassword = () => {
         <>
             <div className="flex h-screen justify-center items-center bg-zinc-500">
                 <div className='flex flex-col items-center bg-background-color w-4/12 justify-center rounded-xl py-6 space-y-8 shadow-lg shadow-zinc-800 border-3'>
-                    <div className="flex flex-row items-center justify-center font-semibold mb-4">
-                    <div className="flex relative flex-row justify-start items-start">
-                        <Link href='/'>
-                            <ArrowBigLeft />
-                        </Link>
-                    </div>
+                    <div className="flex flex-row w-full items-center justify-center font-semibold mb-4">
+                        <div className="flex flex-row justify-start items-start">
+                            <Link href='/'>
+                                <ArrowBigLeft />
+                            </Link>
+                        </div>
                         <div className='flex flex-col items-center justify-center'>
                             <h1>Recupere sua senha</h1>
                             <h6>Enviaremos um código para seu e-mail cadastrado</h6>
@@ -82,4 +82,3 @@ const Rpassword = () => {
 }
 
 export default Rpassword;
-
