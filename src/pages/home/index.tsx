@@ -5,9 +5,9 @@ import '@/app/globals.css'
 
 const Home = () => {
 
-    return <>
-        <SideBar />
-    </>
+  return <>
+    <SideBar />
+  </>
 }
 
 export default Home;
