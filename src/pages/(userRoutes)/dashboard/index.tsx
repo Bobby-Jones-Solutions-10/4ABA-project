@@ -3,11 +3,11 @@ import SideBar from "@/components/SideBar"
 import '@/app/globals.css'
 
 
-const Home = () => {
+const Dashboard = () => {
 
   return <>
     <SideBar />
   </>
 }
 
-export default Home;
+export default Dashboard;

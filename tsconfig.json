@@ -23,6 +23,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/pages/api/auth/{...nextauth}.js", "src/pages/services/index.tsx", "prisma/index.js", "src/pages/services/[name]/index.js", "src/app/page.js", "src/components/FloatInput/index.js", "src/pages/register/index.js", "src/pages/consults/create.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/pages/api/auth/[...nextauth].js", "src/pages/services/index.tsx", "prisma/index.js", "src/pages/services/[name]/index.js", "src/app/page.js", "src/components/FloatInput/index.js", "src/pages/register/index.js", "src/pages/consults/create.js"],
   "exclude": ["node_modules"]
 }
