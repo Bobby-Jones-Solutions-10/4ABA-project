@@ -3,14 +3,10 @@
 //imports icones 
 import { Lock, User } from 'lucide-react'
 
-//imports locais
-import '@/app/globals.css'
 
 //imports react/next
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
-import Image from 'next/image';
-import Link from 'next/link';
 
 //imports zod
 import { z } from 'zod'
@@ -19,6 +15,8 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import axios from 'axios'
 import { signIn } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
+import Image from 'next/image'
 
 const LoginFormSchema = z.object({
   // criação do schema de validação, mapea os campos do formulário

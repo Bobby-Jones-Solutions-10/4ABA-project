@@ -1,5 +1,5 @@
 type ServicesPostsProps = {
-    title?: string,
+    tittle?: string,
     id?: string,
     content?: string,
     date?: string,

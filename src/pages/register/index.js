@@ -65,7 +65,7 @@ const Register = () => {
   }
 
   return (
-    <div className="flex h-screen justify-center items-center bg-zinc-500">
+    o<div className="flex h-screen justify-center items-center bg-zinc-500">
       <div className='flex flex-wrap items-center bg-background-color justify-center rounded-xl space-y-8 shadow-lg shadow-zinc-800 border-3 lg:w-6/12 pb-10'>
         <div href={'/'} className='relative top-20 left-14 flex items-start justify-start w-full' >
           <Link href={'/'}>

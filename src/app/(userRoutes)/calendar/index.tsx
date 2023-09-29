@@ -1,6 +1,5 @@
 import CardWeekDay from '@/components/CardWeekDay';
 import SideBar from '@/components/SideBar';
-import '@/app/globals.css'
 
 
 const Calendar = () => {
